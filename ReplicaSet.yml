@@ -8,9 +8,13 @@ spec:
       name: demo-pod
       labels:
         app: myapp
+        type: front-app
     spec:
       containers:
       - name: nginx-container
         image: nginx
   replicas: 3
+  selector:
+    matchLabels:
+      type: front-app
     
