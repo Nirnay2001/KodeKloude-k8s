@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSets
 metadata:
-  name: App-rs
+  name: app-rs
 spec:
   template:
     metadata:
