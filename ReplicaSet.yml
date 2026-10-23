@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: ReplicaSets
+metadata:
+  name: App-rs
+spec:
+  template:
+    metadata:
+      name: demo-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
+    
