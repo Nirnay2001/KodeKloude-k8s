@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: nginx:1.30
+          image: nginx
   replicas: 4
   selector:
     matchLabels:
