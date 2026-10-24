@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: deply-app
+spec:
+  template:
+    metadata:
+      name: app-demo
+      labels:
+        app: myapp
+        type: front-end
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+  replicas: 4
+  selector:
+    matchLabels:
+      app: myapp
