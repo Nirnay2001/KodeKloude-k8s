@@ -6,9 +6,8 @@ spec:
   selector:
     matchLabels:
       app: myapp
-      type: front-end
   type: NodePort
   ports:
     - targetPort: 80 #this port is for that pod
       port: 80 #this one service port
-      nodePort: 30008
+      nodePort: 30008 
